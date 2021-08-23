@@ -2,6 +2,7 @@
 
 ABOUT:
 Log-in form with animated entrance. Inputs checked for value before the submit button will be enabled. Overlay pop up with welcome message and value of user id pulled from form and added to welcome message.
+
 What's Used:
 - Checking all the input fields and pulling user inputed value to display on page.
 - Disable submit button
