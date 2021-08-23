@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/stylesheet.css">
+   <title>Animated Login Page</title>
+</head>
+
+<body>
+
+   <!--<div class="overlay">
+      <div class="message-box">
+         <p>Hello <span class="user"></span></p>
+         <br>
+         <h2>You are now logged in</h2>
+      </div>
+   </div> -->
+   <div class="wrapper">
+      <div class="form-container">
+         <form action="">
+            <p>Provide your login information below</p>
+            <br>
+            <div class="radio-box">
+            <!-- Input inside label so custom radio can be made and styled. -->   
+               <label for="store-num">
+                  <input type="radio" name="store-num" id="store-number" value="">
+                  <span>Store Number</span>
+               </label>
+               
+               <label for="other-store-num">
+                  <input type="radio" name="store-num" id="other">
+                  <span>Other Location</span>
+               </label>
+            </div>
+
+            <div class="storenumber-box">
+               <label for="storenumber">Store Number</label><br>
+               <input type="text" name="storenumber" id="storenumber" title="Store Number" onkeyup="manage(this)">
+            </div>
+            
+            <div class="id-box">
+               <label for="user-id">User ID</label><br>
+               <input type="text" name="user-id" id="user-id" maxlength="6" onkeyup="manage(this)">  
+            </div>
+
+            <div class="pwd-box">
+               <label for="pwd">Password</label><br>
+               <input type="password" name="pwd" id="pwd" autocomplete="off" onkeyup="manage(this)">
+            </div>
+            
+            <div class="submit-box">
+               <button type="button" value="Login" id="submit-btn" onclick="submitForm();" disabled >Login</button>
+            </div>
+
+         </form>
+      </div>
+      <div class="message-container">
+         <div class="logo-box">
+            <img src="images/Home-Depot-Logo.jpg" alt="Home Depot Logo" class="logo">
+         </div>
+         <div class="welcome-box">
+            <h2>Welcome to myView</h2>
+            <p>Some Text: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium et maiores dolorem sed odit ad quam, accusantium voluptate consectetur ea. Pariatur, non quam! Quia veritatis repudiandae explicabo nemo voluptatem exercitationem.</p>
+         </div>
+      </div>
+   </div>
+   
+
+   <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
