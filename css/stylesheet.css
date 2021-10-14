@@ -93,7 +93,7 @@ label:nth-child(1){
 .submit-box{
  text-align: center;
 }
-.submit-box button{
+/*.submit-box button{
    height: 40px;
    color: white;
    width: 95%;
@@ -104,10 +104,15 @@ label:nth-child(1){
    margin: 0 auto;
    cursor: pointer;
    transition: all 0.5s ease; 
+}*/
+#submit-btn:disabled{
+   color: gray;
+   background-color: rgb(202, 202, 202);
+   cursor: not-allowed;
 }
 #submit-btn{
    background-color: #eca114;
-   /*height: 40px;
+   height: 40px;
    color: white;
    width: 95%;
    border-radius: 2px;
@@ -115,7 +120,8 @@ label:nth-child(1){
    font-weight: 600;
    margin-top: 10px;
    margin: 0 auto;
-   transition: all 0.5s ease;*/
+   cursor: pointer;
+   transition: all 0.5s ease;
 }
 #submit-btn:hover{
    background-color: #ffc355;
@@ -123,12 +129,13 @@ label:nth-child(1){
 #clear-btn{
    background-color: rgb(126, 156, 221);
 }
-button:disabled,
+/*button:disabled,
 button[disabled]{
   border: 1px solid #999999;
   background-color: #cccccc;
   color: #666666;
-}
+  cursor: not-allowed;
+}*/
 input{
    padding: 0 8px;
    margin: 8px 0 5px 0;
@@ -164,13 +171,13 @@ input::-webkit-inner-spin-button {
    right: -400px;
    margin-bottom: 15px;
    opacity: 0;
-   transition: all 0.7s ease-in;
+   transition: all 1s ease-in;
 }
 .welcome-box{
    position: relative;
    top: 295;
    opacity: 0;
-   transition: all 0.7s ease-in;
+   transition: all 1s ease-in;
 }
 .welcome-box h2{
    font-size: 25px;

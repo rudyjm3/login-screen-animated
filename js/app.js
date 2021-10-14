@@ -19,8 +19,7 @@ function manage(txt) {
        if (ele[i].type == 'text' && ele[i].value == '') { //Need to figure out how to check diffrent input types
            btn.disabled = true;    // Disable the button.
            return false;
-       }
-       else {
+       }else {
            btn.disabled = false;   // Enable the button.
        }
    }
@@ -37,15 +36,18 @@ function submitForm() {
    
    document.body.prepend(overlay); //prepend adds element to the begining of assigned element
    overlay.style.opacity = "1";
+   setTimeout(function(){ overlay.value="2 seconds" }, 2000);
    overlay.appendChild(messageBox);
    p.textContent = 'Hello user: ' + user;
    h.textContent = 'You are now logged in';
    messageBox.appendChild(p); // Is there a way to combine these 2 lines
    messageBox.appendChild(h);
 
-
-
-   
+      function closeOverlay() {
+         
+         overlay.style.opacity = "0";
+      }
+   window.setTimeout(closeOverlay, 3000);
 
 }
 
