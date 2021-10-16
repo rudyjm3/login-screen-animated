@@ -18,7 +18,7 @@
    </div> -->
    <div class="wrapper">
       <div class="form-container">
-         <form action="">
+         <form action="" id="login-form" autocomplete="off">
             <p>Provide your login information below</p>
             <br>
             <div class="radio-box">
@@ -41,12 +41,12 @@
             
             <div class="id-box">
                <label for="user-id">User ID</label><br>
-               <input type="text" name="user-id" id="user-id" maxlength="6" autocomplete="username" onkeyup="manage(this)">  
+               <input type="text" name="user-id" id="user-id" autocomplete="off" onkeyup="manage(this)">  
             </div>
 
             <div class="pwd-box">
                <label for="pwd">Password</label><br>
-               <input type="text" name="pwd" id="pwd" minlength="4" autocomplete="current-password" onkeyup="manage(this)">
+               <input type="text" name="pwd" id="pwd" minlength="4" onkeyup="manage(this)">
             </div>
             
             <div class="submit-box">

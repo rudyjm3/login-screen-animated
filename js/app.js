@@ -33,21 +33,28 @@ function submitForm() {
    messageBox.classList.add('message-box'); 
    let p = document.createElement('p');
    let h = document.createElement('h2');
+   //let form = document.getElementById('login-form').value;
    
+   document.getElementById('login-form').reset();
    document.body.prepend(overlay); //prepend adds element to the begining of assigned element
    overlay.style.opacity = "1";
-   setTimeout(function(){ overlay.value="2 seconds" }, 2000);
    overlay.appendChild(messageBox);
    p.textContent = 'Hello user: ' + user;
    h.textContent = 'You are now logged in';
    messageBox.appendChild(p); // Is there a way to combine these 2 lines
    messageBox.appendChild(h);
 
+
       function closeOverlay() {
-         
+         //let form = document.getElementById('login-form');
+         //form.value = "";
          overlay.style.opacity = "0";
+         overlay.style.display = "none";
+         window.location.href="redirectpage.html";
+         overlay.parentNode.removeChild(overlay);
       }
    window.setTimeout(closeOverlay, 3000);
+   
 
 }
 

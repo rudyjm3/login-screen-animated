@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/stylesheet.css">
+   <title>Redirect Page</title>
+</head>
+
+<body>
+
+   <div class="wrapper">
+      <div class="redir-container">
+
+         <h2>This is the redirected page<br>
+            <span id="time-remaining">15</span> <span class="sec">seconds remaining</span></h2>
+         <p>You have been redirected to this page after submitting the login form.<br>
+         Click the button below to return to the login form or wait 15 seconds from now and a function that was started on the loading of this page will send you back automatically.</p>
+         <button type="submit" id="back-btn" onclick="returnToFormbtn()">Go back to login form</button>
+      </div>
+   </div>
+   
+
+   <script type="text/javascript" src="js/redir.js"></script>
+</body>
+</html>

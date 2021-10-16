@@ -110,7 +110,7 @@ label:nth-child(1){
    background-color: rgb(202, 202, 202);
    cursor: not-allowed;
 }
-#submit-btn{
+#submit-btn,#back-btn{
    background-color: #eca114;
    height: 40px;
    color: white;
@@ -123,7 +123,7 @@ label:nth-child(1){
    cursor: pointer;
    transition: all 0.5s ease;
 }
-#submit-btn:hover{
+#submit-btn,#back-btn:hover{
    background-color: #ffc355;
 }
 #clear-btn{
@@ -184,3 +184,36 @@ input::-webkit-inner-spin-button {
    font-weight: 600;
    padding-bottom: 5px;
 }
+
+/* === REDIRECT PAGE STYLING === */
+
+.redir-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   background-color: white;
+   padding: 15px;
+   border-radius: 5px;
+   -webkit-box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.5); 
+   box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.5);
+   color: #333;
+}
+.redir-container h2{
+   text-align: center; 
+}
+#time-remaining{
+   color: red;
+   font-size: 25px;
+   /*border-radius: 50px;
+   background-color: rgb(94, 91, 236);
+   border: 2px solid rgb(68, 68, 156);*/
+}
+.sec{
+   color: black;
+   font-size: 15px;
+}
+.redir-container h2,p{
+   margin-bottom: 15px;
+}
+
