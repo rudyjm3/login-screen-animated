@@ -46,8 +46,7 @@ function submitForm() {
 
 
       function closeOverlay() {
-         //let form = document.getElementById('login-form');
-         //form.value = "";
+         
          overlay.style.opacity = "0";
          overlay.style.display = "none";
          window.location.href="redirectpage.html";
